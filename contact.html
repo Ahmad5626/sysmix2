@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sysmix </title>
+    <link rel="stylesheet" href="./aboutus.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- start of navigation-bar -->
+    <div class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <a href="index.html"><img src="./images/Page 2sysmix logo.png" alt=""></a>
+            </div>
+            <div class="links-content">
+                <ul class="nav-links">
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li class="submenu">
+                        <a href="flavourindustry.html">Industries <i class="fa-solid fa-angle-down icon"></i></a>
+                        <ul class="submenu-content">
+                                <div class="submenu-content1">
+                                    <div>
+                                        <li>
+                                            <a href="flavourindustry.html">Flavours
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </a>
+                                        </li>
+                                    </div>
+                                   
+                                     <div>
+                                        <li><a href="seafoodindustry.html">Seafood
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></a>
+                                        </li>
+
+                                    </div>
+                                </div>
+                                <div class="submenu-content2">
+                                    <div>
+                                        <li>
+                                            <a href="otherindustry.html">Others
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></a>
+                                        </li>
+                                    </div>
+                                </div>
+                                
+                               
+                        </ul>
+                        
+                    
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                    <li style="text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 5px; text-decoration-color: #5c5c5c;"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-button ">
+                <button>
+                    <a href="contact.html" style="color: #5287ac; text-decoration: none;">Book Demo</a>
+                    </button>
+            </div>
+            <a class="nav_toggle">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+            </a>
+        </div>
+    </div>
+    <div class="responsive-menu">
+        <ul class="menu2">
+            <li><a href="features.html">Features</a></li>
+
+
+            <li class="newmenu" onclick="showSubMenu()"><a href="#">Industries <i
+                        class="fa-solid fa-angle-down icon"></i></a>
+                <ul class="submenu-content">
+                    <li><a href="flavourindustry.html">Flavours</a></li>
+                    <li><a href="seafoodindustry.html">Seafood</a></li>
+                    <li><a href="otherindustry.html">Others</a></li>
+
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </div>
+    <!-- end of navigation-bar -->
+
+
+    <!-- form start -->
+
+
+    <div class="container contact-new-class">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 col-md-5 order-md-last d-flex align-items-stretch ">
+                            <div class="contact-wrap w-100 p-md-5 p-4 box-stiky">
+                                <h3 class="mb-4">Book Demo</h3>
+                                <div id="form-message-warning" class="mb-4"></div>
+                                <div id="form-message-success" class="mb-4">
+                                    Your message was sent, thank you!
+                                </div>
+                                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="name">Full Name</label>
+                                                <input type="text" class="form-control" name="name" id="name"
+                                                    placeholder="Name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="text">Phone Number</label>
+                                                <input type="email" class="form-control" name="number" id="number"
+                                                    placeholder="Nmber" >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="email">Email Address</label>
+                                                <input type="email" class="form-control" name="email" id="email"
+                                                    placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="subject">Subject</label>
+                                                <input type="text" class="form-control" name="subject" id="subject"
+                                                    placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="#">Message</label>
+                                                <textarea name="message" class="form-control" id="message" cols="30"
+                                                    rows="4" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="submit" value="Send Message" class="btn btn-primary">
+                                                <div class="submitting"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 d-flex align-items-stretch">
+                            <div class="info-wrap bg-primary w-100 p-md-5 p-4">
+                                <h3>Let's get in touch</h3>
+                                <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+                                <div class="dbox w-100 d-flex align-items-start">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p><span>Address:</span> 6th, 6/22, 11th Main Rd, AK Block, Anna Nagar, Chennai,
+                                            Tamil Nadu 600040</p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-phone"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p><span>Phone:</span> <a href="tel://1234567920"> 9884037476</a></p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p><span>Email:</span> <a href="mailto:info@yoursite.com"> sales@sysmix.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                  
+                                    <div class="text pl-3">
+                                        
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2799772624057!2d80.2057277!3d13.0814342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52642116b2a5cf%3A0xa6a0029ce69d057e!2sSysmix%20Infotech%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1723639814008!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- form end -->
+
+    <!-- location start -->
+
+    <div class="container" style="margin-top: 30px;">
+
+    </div>
+
+
+    <!-- start of footer-section -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="content-1">
+                <img src="./images/Page 2sysmix logo.png" alt="" style="width: 150px; height: 47px;">
+                <!-- <p>Gain actionable intelligence on exceptions and <br>
+                anomalies and respond to customers in real time.</p> -->
+            </div>
+            <div class="content-2">
+                <h1>Industries</h1>
+                <ul>
+                    <li><a href="flavourindustry.html"> The Flavour Industry</a></li>
+                    <li><a href="seafoodindustry.html"> The Seafood Industry </a></li>
+                    <li><a href="otherindustry.html">Other Industry </a></li>
+                </ul>
+            </div>
+            <div class="content-3">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="features.html"> Features</a></li>
+                    <li><a href="aboutus.html"> About Us</a></li>
+                    <li><a href="career.html"> Careers</a></li>
+                </ul>
+            </div>
+            <div class="content-4">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li><i class="fa-solid fa-phone" style="color:#000;"></i><a href=""> 9884037476</a></li>
+                    <li><i class="fa-solid fa-envelope " style="color:#000;"></i><a href="">sales@sysmix.com</a></li>
+                    <div style="display: flex;flex-direction: row; margin-top: 6px;" class="icons">
+                        
+                        
+                        
+                    </div>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of footer-section -->
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Sysmix</title>
     <link rel="stylesheet" href="./flavourindustry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -51,13 +51,37 @@
                     </li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-button ">
-                <button>Book Demo</button>
+                <button><a href="contact.html" style="color: #5287ac; text-decoration: none;">Book Demo</a></button>
             </div>
-            <button class="nav_toggle">☰</button>
+            <a class="nav_toggle">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+            </a>
         </div>
+    </div>
+    <div class="responsive-menu">
+        <ul class="menu2">
+            <li><a href="features.html">Features</a></li>
+
+
+            <li class="newmenu" onclick="showSubMenu()"><a href="#">Industries <i
+                        class="fa-solid fa-angle-down icon"></i></a>
+                <ul class="submenu-content">
+                    <li><a href="flavourindustry.html">Flavours</a></li>
+                    <li><a href="seafoodindustry.html">Seafood</a></li>
+                    <li><a href="otherindustry.html">Others</a></li>
+
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
     </div>
     <!-- end of navigation-bar -->
 
@@ -78,7 +102,7 @@
         <div class="content" >
             <h1>The Flavour Industry</h1>
             <p>When samples become an integral part of your business, the Stack|N|Trace  Workflow CRM can become a crucial factor in driving profitability and growth. </p>
-            <button>Book Demo</button>
+            <button><a href="#top" style="color: white; text-decoration: none;">Book Demo</a></button>
         </div>
      </div>
       <!-- end of the background-image  -->
@@ -209,21 +233,21 @@
                 Transform Your Business With Our Exclusive Add Ons
              </h3>
              <div class="inventory">
-                <div class="inventory-content">
+                <div class="inventory-content content-1">
                     <p class="heading" style="background-color: #e5ac5a;">1</p>
                     <div class="content">
                         <h1 style="color: #e5ac5a;">INVENTORY</h1>
                         <h3>Management Module</h3>
                     </div>
                 </div>
-                <div class="inventory-content">
+                <div class="inventory-content content-2">
                     <p class="heading" style="background-color: #088875;">2</p>
                     <div class="content">
                         <h1 style="color: #088875;">PURCHASE</h1>
                         <h3>Management Module</h3>
                     </div>
                 </div>
-                <div class="inventory-content">
+                <div class="inventory-content content-3">
                     <p class="heading" style="background-color: #7c86c4;">3</p>
                     <div class="content">
                         <h1 style="color: #7c86c4;">ASSET</h1>
@@ -238,7 +262,7 @@
 
          <!-- start of work-withus section -->
              
-         <div class="workwithus-section">
+         <div class="workwithus-section" id="#top">
             <div class="workwithus-content">
              <div class="content">
                  <div class="content-data">
@@ -296,10 +320,10 @@
                 <ul>
                 <li><i class="fa-solid fa-phone"style="color:#000;"></i><a href=""> 9884037476</a></li>
                 <li><i class="fa-solid fa-envelope " style="color:#000;"></i><a href=""> sales@sysmix.com</a></li>
-                <div style="display: flex;flex-direction: row; margin-top: 6px;">
-                    <i class="fa-brands fa-facebook-f " style="margin: 5px 5px; cursor: pointer;"></i>
-                    <i class="fa-brands fa-instagram" style="margin: 5px 5px; cursor: pointer;"></i>
-                    <i class="fa-brands fa-twitter" style="margin: 5px 5px; cursor: pointer;"></i>
+                <div style="display: flex;flex-direction: row; margin-top: 6px;" class="icons">
+                    
+                    
+                    
                 </div>
                 
                 </ul>
@@ -308,5 +332,6 @@
         </div>
     </div>
 <!-- end of footer-section -->
+<script src="./index.js"></script>
 </body>
 </html>

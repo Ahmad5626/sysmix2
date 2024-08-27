@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sysmix</title>
     <link rel="stylesheet" href="seafoodindustry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -51,13 +51,37 @@
                     </li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-button ">
-                <button>Book Demo</button>
+                <button><a href="contact.html" style="color: #5287ac; text-decoration: none;">Book Demo</a></button>
             </div>
-            <button class="nav_toggle">☰</button>
+            <a class="nav_toggle">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+            </a>
         </div>
+    </div>
+    <div class="responsive-menu">
+        <ul class="menu2">
+            <li><a href="features.html">Features</a></li>
+
+
+            <li class="newmenu" onclick="showSubMenu()"><a href="#">Industries <i
+                        class="fa-solid fa-angle-down icon"></i></a>
+                <ul class="submenu-content">
+                    <li><a href="flavourindustry.html">Flavours</a></li>
+                    <li><a href="seafoodindustry.html">Seafood</a></li>
+                    <li><a href="otherindustry.html">Others</a></li>
+
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
     </div>
     <!-- end of navigation-bar -->
 
@@ -109,7 +133,7 @@
  <!-- start of mission-modes-section -->
  <div class="mission-modes">
     <div class="mission-modes-content">
-       <div class="right-content" style=" display: flex;align-items: center;justify-content: center;">
+       <div class="right-content none" style=" display: flex;align-items: center;justify-content: center;">
             <img src="./images/Page 3Ph.png" alt="" style="display: block;">
 
         </div>
@@ -129,15 +153,15 @@
 <!-- end of mission-modes-section -->
 
   <!-- start of module-benefits-heading -->
-    <div class="module-benefits-heading">
+    <!-- <div class="module-benefits-heading">
         <h1>Module Benefits</h1>
         <h4>The Seafood Process Industry</h4>
-    </div>
+    </div> -->
 
     <!-- end of module-benefits-heading -->
 
     <!-- start of module-benefits-content -->
-    <div class="grid-container module-benefits">
+    <!-- <div class="grid-container module-benefits">
         <div class="column1 module-content">
             <div class="content-1">
                 <div class="image">
@@ -193,34 +217,124 @@
              </div>
      
         </div>
-    </div>
+    </div> -->
     <!-- end of module-benefits-content -->
 
-      <!-- start of support-modules -->
-      <div class="support-modules">
-        <h1 class="heading">Supportive Modules</h1>
-        <div class="supportive-content">
-            <!-- <div class="content-1">
-                <img src="./images/Module 1.jpg" alt="">
-                <p>Sales Order Management <br> System</p>
-            </div> -->
-            <div class="content-1">
-                <img src="./images/pricecalculator.jpeg" alt="" style="object-fit: contain;">
-                <p>Price Calculator for <br> Multiple Product Based <br> Shipments</p>
+
+         <!-- start of module-benefits -->
+<div class="module-benefits module-benefits-heading">
+    <h1>Module Benefits</h1>
+    <h4>The Seafood Process Industry</h4>
+    <div class="module-content">
+        <div class="content-1">
+           <div class="image">
+            <img src="./images/Asset 21@10x.png" alt="">
+           </div>
+            <div class="content">
+                <p>Centralized system for tracking and managing orders from multiple sales channels, with real-time updates on order status and inventory levels.</p>
             </div>
-            <div class="content-1">
-                <img src="./images/salesregister.jpeg" alt="" style="object-fit: contain;">
-                <p>Sales Register of Historical <br> Sales Data</p>
-            </div>
-            <div class="content-1">
-                <img src="./images/shippingdocs.jpeg" alt="" style="object-fit: contain;">
-                <p>Shipping Docs, Inland & <br>Export Sales
-                </p>
-            </div>
+            <div class="border-color"></div>
+        </div>
+
+        <div class="content-2" >
+            <div class="image">
+                <img src="./images/Asset 19@10x.png" alt="">
+               </div>
+                <div class="content">
+                    <p>Real-time updates of inventory management levels including varied analytics and option to look up just like how users would do so for a particular item an amazon.</p>
+                </div>
+                <div class="border-color"></div>
+        </div>
+
+        <div class="content-3">
+            <div class="image">
+                <img src="./images/Asset 20@10x.png" alt="">
+               </div>
+                <div class="content">
+                    <p>Communicate clearly to the logistics about container, transportation and freight needs.</p>
+                </div>
+                <div class="border-color"></div>
         </div>
     </div>
+    <div class="module-content">
+        <div class="content-1 content-4" style="background-color: #e1f9f5;">
+           <div class="image">
+            <img src="./images/Asset 18@10x.png" alt="">
+           </div>
+            <div class="content">
+                <p>Communicate clearly to customers regarding their order status, shipping details, and delivery updates.
 
-  <!-- end of support-modules -->
+                </p>
+            </div>
+            <div class="border-color" style="background-color: #088875;"></div>
+        </div>
+        <div class="content-3" style="background-color: #e6eaff;">
+            <div class="image">
+                <img src="./images/Asset 17@10x.png" alt="">
+               </div>
+                <div class="content">
+                    <p>Decision making pertaining to purchases, inventory management and pricing.</p>
+                </div>
+                <div class="border-color" style="background-color: #7c86c4;"></div>
+        </div>
+    </div>
+</div>
+<!-- end of module-benefits -->
+     <!-- start of module-benefits-content -->
+     <!-- <div class="module-content">
+        <div class="content-1">
+           <div class="image">
+            <img src="./images/Asset 3@10x.png" alt="">
+           </div>
+            <div class="content">
+                <p>Visual tracking of the request in the form a pipeline view to track each sample, its variant or equivalent and their status across various stages.</p>
+            </div>
+            <div class="border-color"></div>
+        </div>
+
+        <div class="content-2">
+            <div class="image">
+                <img src="./images/Asset 2@10x.png" alt="">
+               </div>
+                <div class="content">
+                    <p>Options to roll back accidental data entries from a user's end based on a valid set of business rules similar to that of slack's.</p>
+                </div>
+                <div class="border-color"></div>
+        </div>
+
+        <div class="content-3">
+            <div class="image">
+                <img src="./images/Asset 1@10x.png" alt="">
+               </div>
+                <div class="content">
+                    <p>Option to interact between sales team and varies ops department members at each stage using a built-in chat tied to the specific request.</p>
+                </div>
+                <div class="border-color"></div>
+        </div>
+    </div> -->
+
+          <!-- start of support-modules -->
+          <div class="support-modules">
+            <h1 class="heading">Supportive Modules</h1>
+            <div class="supportive-content">
+               
+                <div class="content-1">
+                    <img src="./images/pricecalculator.jpeg" alt="" style="object-fit: contain;">
+                    <p>Price Calculator for <br> Multiple Product Based <br> Shipments</p>
+                </div>
+                <div class="content-1">
+                    <img src="./images/salesregister.jpeg" alt="" style="object-fit: contain;">
+                    <p>Sales Register of Historical <br> Sales Data</p>
+                </div>
+                <div class="content-1">
+                    <img src="./images/shippingdocs.jpeg" alt="" style="object-fit: contain;">
+                    <p>Shipping Docs, Inland & <br>Export Sales
+                    </p>
+                </div>
+            </div>
+        </div>
+
+      <!-- end of support-modules -->
 
      <!-- start of add-ons section -->
 
@@ -237,14 +351,14 @@
                         <h3>Management Module</h3>
                     </div>
                 </div>
-                <div class="inventory-content">
+                <div class="inventory-content content-2">
                     <p class="heading" style="background-color: #9065ec;">2</p>
                     <div class="content">
                         <h1 style="color: #9065ec;">PURCHASE</h1>
                         <h3>Management Module</h3>
                     </div>
                 </div>
-                <div class="inventory-content">
+                <div class="inventory-content content-3">
                     <p class="heading" style="background-color: #963596;">3</p>
                     <div class="content">
                         <h1 style="color: #963596;">ASSET</h1>
@@ -260,27 +374,17 @@
 
          <!-- start of add-ons section -->
 
-     <div class="addons-section" style="position: relative; top: 300px;">
-        <!-- <h1 class="heading">Add Ons</h1> -->
-            <!-- <h3 class="heading-three">
-                Transform Your Business With Our Exclusive Add Ons -->
-             </h3>
+     <div class="addons-section" style="position: relative; top: 250px;">
+        
              <div class="inventory" style="width: 60%; margin: 0 auto;">
-                <!-- <div class="inventory-content">
-                    <p class="heading">1</p>
-                    <div class="content">
-                        <h1>Stores</h1>
-                        <h3>Management Module</h3>
-                    </div>
-                </div> -->
-                <div class="inventory-content">
+                <div class="inventory-content content-4">
                     <p class="heading" style="background-color: #2659C3;">4</p>
                     <div class="content">
                         <h1 style="color: #9065ec;">RAW MATERIAL</h1>
                         <h3>Management Module</h3>
                     </div>
                 </div>
-                <div class="inventory-content">
+                <div class="inventory-content content-5">
                     <p class="heading" style="background-color: #861657;">5</p>
                     <div class="content">
                         <h1 style="color: #963596;">PRODUCTION</h1>
@@ -354,10 +458,10 @@
                 <ul>
                 <li><i class="fa-solid fa-phone"style="color:#000;"></i><a href=""> 9884037476</a></li>
                 <li><i class="fa-solid fa-envelope " style="color:#000;"></i><a href=""> sales@sysmix.com</a></li>
-                <div style="display: flex;flex-direction: row; margin-top: 6px;">
-                    <i class="fa-brands fa-facebook-f " style="margin: 5px 5px; cursor: pointer;"></i>
-                    <i class="fa-brands fa-instagram" style="margin: 5px 5px; cursor: pointer;"></i>
-                    <i class="fa-brands fa-twitter" style="margin: 5px 5px; cursor: pointer;"></i>
+                <div style="display: flex;flex-direction: row; margin-top: 6px;" class="icons">
+                    
+                    
+                    
                 </div>
                 
                 </ul>
@@ -366,5 +470,6 @@
         </div>
     </div>
 <!-- end of footer-section -->
+<script src="./index.js"></script>
 </body>
 </html>

@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sysmix</title>
+
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-        <!-- start of navigation-bar -->
+    <!-- start of navigation-bar -->
     <div class="navbar">
         <div class="navbar-content">
             <div class="logo">
@@ -16,125 +22,178 @@
             </div>
             <div class="links-content">
                 <ul class="nav-links">
-                    <li style="text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 5px; text-decoration-color: #5c5c5c;"><a href="index.html">Home</a></li>
+                    <li
+                        style="text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 5px; text-decoration-color: #5c5c5c;">
+                        <a href="index.html">Home</a></li>
                     <li><a href="features.html">Features</a></li>
                     <li class="submenu">
                         <a href="flavourindustry.html">Industries <i class="fa-solid fa-angle-down icon"></i></a>
                         <ul class="submenu-content">
-                                <div class="submenu-content1">
-                                    <div>
-                                        <li>
-                                            <a href="flavourindustry.html">Flavours
+                            <div class="submenu-content1">
+                                <div>
+                                    <li>
+                                        <a href="flavourindustry.html">Flavours
                                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            </a>
-                                        </li>
-                                    </div>
-                                   
-                                     <div>
-                                        <li><a href="seafoodindustry.html">Seafood
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></a>
-                                        </li>
+                                        </a>
+                                    </li>
+                                </div>
 
-                                    </div>
+                                <div>
+                                    <li><a href="seafoodindustry.html">Seafood
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </a>
+                                    </li>
+
                                 </div>
-                                <div class="submenu-content2">
-                                    <div>
-                                        <li>
-                                            <a href="otherindustry.html">Others
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></a>
-                                        </li>
-                                    </div>
+                            </div>
+                            <div class="submenu-content2">
+                                <div>
+                                    <li>
+                                        <a href="otherindustry.html">Others
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </a>
+                                    </li>
                                 </div>
-                                
-                               
+                            </div>
+
+
                         </ul>
-                        
-                    
+
+
                     </li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-button ">
-                <button>Book Demo</button>
+                <button>
+                    <a href="contact.html" style="color: #5287ac; text-decoration: none;">Book Demo</a>
+                </button>
             </div>
-            <button class="nav_toggle">☰</button>
+            <a class="nav_toggle">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+            </a>
         </div>
+    </div>
+    <div class="responsive-menu">
+        <ul class="menu2">
+            <li><a href="features.html">Features</a></li>
+
+
+            <li class="newmenu" onclick="showSubMenu()"><a href="#">Industries <i
+                        class="fa-solid fa-angle-down icon"></i></a>
+                <ul class="submenu-content">
+                    <li><a href="flavourindustry.html">Flavours</a></li>
+                    <li><a href="seafoodindustry.html">Seafood</a></li>
+                    <li><a href="otherindustry.html">Others</a></li>
+
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
     </div>
     <!-- end of navigation-bar -->
 
-     <!-- start of carousel section -->
-     <div class="carousel">
+    <!-- start of carousel section -->
+    <div class="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image: url('./images/Banner 1.jpg');">
-            <div class="carousel-content">
-              <h1 style="position: relative;bottom: 40px;">Transform Your Business <br> Through Customized Workflows</h1>
-              <p style="position: relative;bottom:30px;">Stack|N|Track Workflow CRM.</p>
-              <button style="background-color: #f26965; border-style:none;position: relative;bottom: 30px;">Talk to Us</button>
+            <div class="carousel-item active" style="background-image: url('./images/Banner 1.jpg');">
+                <div class="carousel-content">
+                    <h1 style="position: relative;bottom: 40px;">Transform Your Business <br> Through Customized
+                        Workflows</h1>
+                    <p style="position: relative;bottom:30px;">Stack|N|Track Workflow CRM.</p>
+                    <button style="background-color: #f26965; border-style:none;position: relative;bottom: 30px;">Talk
+                        to Us</button>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item" style="background-image: url('./images/Banner 2.jpg');">
-            <div class="carousel-content">
-              <h1>Maximize Your <br> Business Potential</h1>
-              <p>Stack|N|Trace can create and automate your workflows with simple condition-based triggers to perform a wide variety of tasks, handling everything from start-to finish while the sales team can concentrate on winning deals.</p>
-              <button style="background-color: #879251;border-style: none;">Book Demo</button>
+            <div class="carousel-item" style="background-image: url('./images/Banner 2.jpg');">
+                <div class="carousel-content">
+                    <h1>Maximize Your <br> Business Potential</h1>
+                    <p>Stack|N|Trace can create and automate your workflows with simple condition-based triggers to
+                        perform a wide variety of tasks, handling everything from start-to finish while the sales team
+                        can concentrate on winning deals.</p>
+                    <button style="background-color: #879251;border-style: none;">
+
+                        <a href="contact.html" style="color: white; text-decoration: none;">Book Demo</a></button>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item" style="background-image: url('./images/Banner\ 3.jpg');">
-            <div class="carousel-content">
-              <h1 style="position: relative; bottom: 15px;">Improve Tracking of Request Pipelines & ship Faster</h1>
-              <p>Stack|N|Trace CRM's advanced request pipeline tracking system provides complete visibility into your processes, empowering you to make informed
-                decisions and keep the customers satisfied on their journeys.
-              </p>
-              <button style="background-color: #aba48b;border-style: none;">Book Demo</button>
+            <div class="carousel-item" style="background-image: url('./images/Banner\ 3.jpg');">
+                <div class="carousel-content">
+                    <h1 style="position: relative; bottom: 15px;">Improve Tracking of Request Pipelines & ship Faster
+                    </h1>
+                    <p>Stack|N|Trace CRM's advanced request pipeline tracking system provides complete visibility into
+                        your processes, empowering you to make informed
+                        decisions and keep the customers satisfied on their journeys.
+                    </p>
+                    <button style="background-color: #aba48b;border-style: none;"><a href="contact.html"
+                            style="color: white; text-decoration: none;">Book Demo</a></button>
+                </div>
             </div>
-          </div>
         </div>
         <div class="carousel-indicators">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
-      </div>
-     <!-- end of carouse section -->
+    </div>
+    <!-- end of carouse section -->
 
-      <!-- start of features -->
-      <div class="features-heading">
+    <!-- start of features -->
+    <div class="features-heading">
         <h3> Key Features</h3>
-      </div>
-      <!-- end of features -->
+    </div>
+    <!-- end of features -->
 
-        <!-- start of features-content -->
+    <!-- start of features-content -->
     <div class="features">
         <div class="features-content flex-container">
             <div class="flex-item-60">
                 <h2>Customized Workflows with Triggers</h2>
-                <p>For scenarios where a sales request goes through various departments and processing stages Stack|N|Trace's workflow based solution with triggers and action items, such as approvals can come in handy for streamlining business opetations.</p>
-                <img src="./images/1.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 500px; height: 400px;">
+                <p>For scenarios where a sales request goes through various departments and processing stages
+                    Stack|N|Trace's workflow based solution with triggers and action items, such as approvals can come
+                    in handy for streamlining business opetations.</p>
+                <img src="./images/bg-img1.png" alt=""
+                    style="position: absolute;left: 0; bottom: 0;width: 100%;  height: 400px;" class="bg-img1">
                 <img src="./images/Asset 16@10x.png" alt="" style="border-radius: 15px;">
-               
+
             </div>
             <div class="flex-item-40">
                 <h2>Identify Bottlenecks with Pipeline View</h2>
-                <p>Spot and resolve bottlenecks pertaining to a sales request using Stack|N|Trace's intuitive visual pipeling view where one can clearly see a request's path.Bottlenecks related to a group of requests can also be effectively troubleshooted using the pipeling view analysis for a range of requests.</p>
+                <p>Spot and resolve bottlenecks pertaining to a sales request using Stack|N|Trace's intuitive visual
+                    pipeling view where one can clearly see a request's path.Bottlenecks related to a group of requests
+                    can also be effectively troubleshooted using the pipeling view analysis for a range of requests.</p>
+
+                <img src="./images/2.png" alt=""
+                    style="position: absolute;left: 0; bottom: 0; width: 100%;  height: 400px;" class="bg-img2">
                 <img src="./images/Asset 22@10x.png" alt="" style="border-radius: 15px; border-radius: 50px;">
-                <img src="./images/2.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 350px; height: 400px;">
             </div>
         </div>
 
         <div class="features-content flex-container">
-           <div class="flex-item-40" style="background-color: #3fa2f6;">
-                <h2>End-to-end Task Management with Push &  E-Mail Notifications</h2>
-                <p>Never miss a follow-up with Stack|N|Trace CRM's push and email notifications for tasks and follow-up activities, whether it's sales visits or preparing for packing and shipping.</p>
+            <div class="flex-item-40" style="background-color: #378fd1;">
+                <h2>End-to-end Task Management with Push & E-Mail Notifications</h2>
+                <p>Never miss a follow-up with Stack|N|Trace CRM's push and email notifications for tasks and follow-up
+                    activities, whether it's sales visits or preparing for packing and shipping.</p>
+
+                <img src="./images/4.png" alt=""
+                    style="position: absolute;left: 0; bottom: 0; width: 100%;  height: 400px;" class="bg-img2">
                 <img src="./images/Asset 14@10x.png" alt="" style="border-radius: 15px;">
-                <img src="./images/3.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 350px; height: 400px;">
             </div>
-            <div class="flex-item-60" style="background-color: #fff9d0;">
+            <div class="flex-item-60 viewmore" style="background-color: #fff9d0; ">
                 <h2>Take charge of your team's follow-ups using the subscribe service</h2>
-                <p>Want to monitor your team's follow-ups? Stack|N|Trace CRM, based on business rules, allows the sales head or a territory manager to subcribe to an associate member's follow-ups as needed to ensure that no follow-ups are missed during the day.</p>
+                <p>Want to monitor your team's follow-ups? Stack|N|Trace CRM, based on business rules, allows the sales
+                    head or a territory manager to subcribe to an associate member's follow-ups as needed to ensure that
+                    no follow-ups are missed during the day.</p>
+
+                <img src="./images/4.png" alt=""
+                    style="position: absolute;left: 0; bottom: 0;width: 100%;  height: 400px;" class="bg-img1">
                 <img src="./images/Asset 13@10x.png" alt="">
-                <img src="./images/4.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 500px; height: 400px;">
-                <a href="features.html#features-section"><button >View more</button></a>
+                <a href="features.html#features-section"><button>View more</button></a>
             </div>
         </div>
     </div>
@@ -148,78 +207,79 @@
     <!-- end of indusstries heading -->
 
     <!-- start of industries-content -->
-        <div class="industry">
-            <div class="industry-content">
-                <div class="content-1">
-                    <div class="img" >
-                       <a href="flavourindustry.html"><img src="./images/Page 9Flavour2.jpg" alt=""></a>
-                    </div>
-                    <div class="heading">
-                       <h2>Flavour Industry</h2>
-                    </div>
-                 </div>
-                 <div class="content-1">
-                    <div class="img" >
-                       <a href="seafoodindustry.html"><img src="./images/Page 10Sea Food.jpg" alt=""></a>
-                    </div>
-                    <div class="heading">
-                       <h2>Seafood Industry</h2>
-                    </div>
-                 </div>
-                 <div class="content-1">
-                    <div class="img" >
-                       <a href="otherindustry.html"><img src="./images/Page 11Others.jpg" alt=""></a>
-                    </div>
-                    <div class="heading">
-                       <h2>Other Industry</h2>
-                    </div>
-                 </div>
+    <div class="industry">
+        <div class="industry-content">
+            <div class="content-1">
+                <div class="img">
+                    <a href="flavourindustry.html"><img src="./images/Page 9Flavour2.jpg" alt=""></a>
+                </div>
+                <div class="heading">
+                    <h2>Flavour Industry</h2>
+                </div>
+            </div>
+            <div class="content-1">
+                <div class="img">
+                    <a href="seafoodindustry.html"><img src="./images/Page 10Sea Food.jpg" alt=""></a>
+                </div>
+                <div class="heading">
+                    <h2>Seafood Industry</h2>
+                </div>
+            </div>
+            <div class="content-1">
+                <div class="img">
+                    <a href="otherindustry.html"><img src="./images/Page 11Others.jpg" alt=""></a>
+                </div>
+                <div class="heading">
+                    <h2>Other Industry</h2>
+                </div>
             </div>
         </div>
+    </div>
     <!-- end of industries-content -->
 
-        <!-- start of footer-section -->
-        <div class="footer">
-         <div class="footer-content">
-             <div class="content-1">
-                 <img src="./images/Page 2sysmix logo.png" alt="" style="width: 150px; height: 47px;">
-                 <!-- <p>Gain actionable intelligence on exceptions and <br>
+    <!-- start of footer-section -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="content-1">
+                <img src="./images/Page 2sysmix logo.png" alt="" style="width: 150px; height: 47px;">
+                <!-- <p>Gain actionable intelligence on exceptions and <br>
                      anomalies and respond to customers in real time.</p> -->
-             </div>
-             <div class="content-2">
-                 <h1>Industries</h1>
-                 <ul>
-                 <li><a href="flavourindustry.html"> The Flavour Industry</a></li>
-                 <li><a href="seafoodindustry.html"> The Seafood Industry </a></li>
-                <li><a href="otherindustry.html">Other Industry </a></li>
-                 </ul>
-             </div>
-             <div class="content-3">
-                 <h1>Quick Links</h1>
-                 <ul>
-                 <li><a href="features.html"> Features</a></li>
-                 <li><a href="aboutus.html"> About Us</a></li>
-                 <li><a href="career.html"> Careers</a></li>
-                 </ul>
-             </div>
-             <div class="content-4">
-                 <h1>Contact Us</h1>
-                 <ul>
-                 <li><i class="fa-solid fa-phone"style="color:#000;"></i><a href=""> 9884037476</a></li>
-                 <li><i class="fa-solid fa-envelope " style="color:#000;"></i><a href=""> sales@sysmix.com</a></li>
-                 <div style="display: flex;flex-direction: row; margin-top: 6px;">
-                     <i class="fa-brands fa-facebook-f " style="margin: 5px 5px; cursor: pointer;"></i>
-                     <i class="fa-brands fa-instagram" style="margin: 5px 5px; cursor: pointer;"></i>
-                     <i class="fa-brands fa-twitter" style="margin: 5px 5px; cursor: pointer;"></i>
-                 </div>
-                 
-                 </ul>
-             </div>
- 
-         </div>
-     </div>
-<!-- end of footer-section -->
-      <script src="./index.js"></script>
-       
+            </div>
+            <div class="content-2">
+                <h1>Industries</h1>
+                <ul>
+                    <li><a href="flavourindustry.html"> The Flavour Industry</a></li>
+                    <li><a href="seafoodindustry.html"> The Seafood Industry </a></li>
+                    <li><a href="otherindustry.html">Other Industry </a></li>
+                </ul>
+            </div>
+            <div class="content-3">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="features.html"> Features</a></li>
+                    <li><a href="aboutus.html"> About Us</a></li>
+                    <li><a href="career.html"> Careers</a></li>
+                </ul>
+            </div>
+            <div class="content-4">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li><i class="fa-solid fa-phone" style="color:#000;"></i><a href=""> 9884037476</a></li>
+                    <li><i class="fa-solid fa-envelope " style="color:#000;"></i><a href=""> sales@sysmix.com</a></li>
+                    <div style="display: flex;flex-direction: row; margin-top: 6px;" class="icons">
+
+
+
+                    </div>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of footer-section -->
+    <script src="./index.js"></script>
+
 </body>
+
 </html>

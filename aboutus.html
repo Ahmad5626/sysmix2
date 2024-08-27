@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sysmix</title>
     <link rel="stylesheet" href="./aboutus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -51,13 +51,37 @@
                     </li>
                     <li style="text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 5px; text-decoration-color: #5c5c5c;"><a href="aboutus.html">About Us</a></li>
                     <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-button ">
                 <button>Book Demo</button>
             </div>
-            <button class="nav_toggle">☰</button>
+            <a class="nav_toggle">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+            </a>
         </div>
+    </div>
+    <div class="responsive-menu">
+        <ul class="menu2">
+            <li><a href="features.html">Features</a></li>
+
+
+            <li class="newmenu" onclick="showSubMenu()"><a href="#">Industries <i
+                        class="fa-solid fa-angle-down icon"></i></a>
+                <ul class="submenu-content">
+                    <li><a href="flavourindustry.html">Flavours</a></li>
+                    <li><a href="seafoodindustry.html">Seafood</a></li>
+                    <li><a href="otherindustry.html">Others</a></li>
+
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
     </div>
     <!-- end of navigation-bar -->
 
@@ -71,8 +95,8 @@
         <div class="aboutus-section">
             <div class="aboutus-content">
                 <div class="left-content">
-                    <h4>Join Us Today</h4>
-                    <h1>  <span class="v1"></span> The Right Place For You</h1>
+                    <h4 >Simplify Your Business With Sysmix</h4>
+                    <h1>  <span class="v1"></span> Easy Business Solutions</h1>
                     <p>Ever since its inception in 2003, Sysmix has helped several hundred  customers consistently solve business challenges. The solutions developed  by Sysmix have gone beyond adapting to customer’s needs by unlocking  hidden information in the form of actionable insights.
                         <br>
                         <br>
@@ -119,22 +143,22 @@
             <div class="values-content">
                 <div class="content-1">
                     <div class="insidecontent-1">
-                       <p class="heading">1</p>
+                       <p class="heading" style="background-color: #E5AC5A ;">1</p>
                     <h4>Innovation</h4>
                     <p class="content">Embracing cuttin-edge technology to
                     continuously improve workflow efficience and provide state-of-the-are solution <br>tailored to clients needs</p>
                     </div>
-                 </div><span style="border-right: 2px solid #cfd2d8; height: 200px;"></span>
+                 </div><span style="border-right: 2px solid #cfd2d8; height: 200px;" ></span>
                  <div class="content-2">
                     <div class="insidecontent-2">
-                       <p class="heading">2</p>
+                       <p class="heading" style="background-color: #088875;">2</p>
                        <h4>Customer-Centricity</h4>
                        <p class="content">Prioritizing customer satisfaction by delivering personalized and responsive services, ensuring every client's unique requirements are met</p>
                     </div>
                  </div><span style="border-right: 2px solid #cfd2d8; height: 200px;"></span>
                  <div class="content-3">
                     <div class="insidecontent-3">
-                       <p class="heading">3</p>
+                       <p class="heading" style="background-color: #7C86C4;">3</p>
                        <h4>Integrity</h4>
                        <p class="content">Upholding the highest standards of hoesty  and transparency in all business practices, fostering trust and long-tem relationships with clients.</p>
                     </div>
@@ -206,10 +230,10 @@
             <ul>
             <li><i class="fa-solid fa-phone"style="color:#000;"></i><a href=""> 9884037476</a></li>
             <li><i class="fa-solid fa-envelope " style="color:#000;"></i><a href=""> sales@sysmix.com</a></li>
-            <div style="display: flex;flex-direction: row; margin-top: 6px;">
-                <i class="fa-brands fa-facebook-f " style="margin: 5px 5px; cursor: pointer;"></i>
-                <i class="fa-brands fa-instagram" style="margin: 5px 5px; cursor: pointer;"></i>
-                <i class="fa-brands fa-twitter" style="margin: 5px 5px; cursor: pointer;"></i>
+            <div style="display: flex;flex-direction: row; margin-top: 6px;" class="icons">
+                
+                
+                
             </div>
             
             </ul>
@@ -220,6 +244,6 @@
 <!-- end of footer-section -->
 
 
-
+<script src="./index.js"></script>
 </body>
 </html>

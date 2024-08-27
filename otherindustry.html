@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./otherindustry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title></title>
+    <title>Sysmix</title>
 </head>
 <body>
     <!-- start of navigation-bar -->
@@ -51,13 +51,37 @@
                     </li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-button ">
-                <button>Book Demo</button>
+                <button><a href="contact.html" style="color: #5287ac; text-decoration: none;">Book Demo</a></button>
             </div>
-            <button class="nav_toggle">☰</button>
+            <a class="nav_toggle">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+            </a>
         </div>
+    </div>
+    <div class="responsive-menu">
+        <ul class="menu2">
+            <li><a href="features.html">Features</a></li>
+
+
+            <li class="newmenu" onclick="showSubMenu()"><a href="#">Industries <i
+                        class="fa-solid fa-angle-down icon"></i></a>
+                <ul class="submenu-content">
+                    <li><a href="flavourindustry.html">Flavours</a></li>
+                    <li><a href="seafoodindustry.html">Seafood</a></li>
+                    <li><a href="otherindustry.html">Others</a></li>
+
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
     </div>
     <!-- end of navigation-bar -->
 
@@ -74,7 +98,7 @@
 
  <!-- start of image slider -->
  <div >
-    <div class="container" >
+    <div class="container show-dekstop" >
       <div class="left-panel" >
           <div class="vertical-line"></div>
           <div class="vertical-dots">
@@ -88,7 +112,7 @@
           <h1 class="card-title"></h1>
       </div>
       <div class="slider-container">
-          <div class="slider">
+          <div class="slider" >
               <div class="slide" data-background="background2.jpeg">
                   <div class="card">
                       <img src="image2.jpg" alt="Cashew Process Units">
@@ -127,6 +151,44 @@
           <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
           <button class="next" onclick="moveSlide(1)">&#10095;</button>
       </div>
+    </div>
+    <div class="container new-container">
+        <div id="slide">
+            <div class="item" style="background-image: url('./images/background1.jpeg');">
+                <div class="content">
+                    <div class="name">Export Process Units</div>
+                   
+                    <!-- <button>See more</button> -->
+                </div>
+            </div>
+            <div class="item" style="background-image: url('./images/background2.jpeg');">
+                <div class="content">
+                    <div class="name">Cashew Process Units</div>
+                    
+                    <!-- <button>See more</button> -->
+                </div>
+            </div>
+            <div class="item" style="background-image: url('./images/background3.jpeg');">
+                <div class="content">
+                    <div class="name">Coir Pith Manufacturing Industry</div>
+                   
+                    <!-- <button>See more</button> -->
+                </div>
+            </div>
+            <div class="item" style="background-image: url('./images/background4.jpeg');">
+                <div class="content">
+                    <div class="name">Consumable & <br>
+                        Electronics Manufacturing</div>
+                    
+                    <!-- <button>See more</button> -->
+                </div>
+            </div>
+           
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
     </div>
 </div>
 
@@ -194,9 +256,9 @@
                  <li><i class="fa-solid fa-phone"style="color:#000;"></i><a href=""> 9884037476</a></li>
                  <li><i class="fa-solid fa-envelope " style="color:#000;"></i><a href=""> sales@sysmix.com</a></li>
                  <div style="display: flex;flex-direction: row; margin-top: 6px;">
-                     <i class="fa-brands fa-facebook-f " style="margin: 5px 5px; cursor: pointer;"></i>
-                     <i class="fa-brands fa-instagram" style="margin: 5px 5px; cursor: pointer;"></i>
-                     <i class="fa-brands fa-twitter" style="margin: 5px 5px; cursor: pointer;"></i>
+                     
+                     
+                     
                  </div>
                  
                  </ul>
@@ -208,5 +270,6 @@
 
 
     <script src="./otherindustry.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

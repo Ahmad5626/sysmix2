@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sysmix</title>
     <link rel="stylesheet" href="./features.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -51,13 +51,39 @@
                     </li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-button ">
-                <button>Book Demo</button>
+                <button>
+                    
+                    <a href="contact.html" style="color: #5287ac; text-decoration: none;">Book Demo</a></button>
             </div>
-            <button class="nav_toggle">☰</button>
+            <a class="nav_toggle">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+            </a>
         </div>
+    </div>
+    <div class="responsive-menu">
+        <ul class="menu2">
+            <li><a href="features.html">Features</a></li>
+
+
+            <li class="newmenu" onclick="showSubMenu()"><a href="#">Industries <i
+                        class="fa-solid fa-angle-down icon"></i></a>
+                <ul class="submenu-content">
+                    <li><a href="flavourindustry.html">Flavours</a></li>
+                    <li><a href="seafoodindustry.html">Seafood</a></li>
+                    <li><a href="otherindustry.html">Others</a></li>
+
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
     </div>
     <!-- end of navigation-bar -->
 
@@ -75,31 +101,37 @@
         <div class="features">
             <div class="features-content flex-container">
                 <div class="flex-item-60">
+                   
+                   
+                    
+                    <img src="./images/1stblue.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 100%; height: 400px;" class="bg-img1">
                     <h2>Customized Workflows with Triggers</h2>
                     <p>For scenarios where a sales request goes through various departments & processing stages Stack|N|Trace's workflow based solution with triggers & action items, such as approvals can come in handy for streamlining business operations.</p>
                     <img src="./images/Asset 16@10x.png" alt="">
-                    <img src="./images/1.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 500px; height: 400px;">
                 </div>
                 <div class="flex-item-40">
                     <h2>Identify Bottlenecks with Pipeline View</h2>
                     <p>Spot and resolve bottlenecks pertaining to a sales request using Stack|N|Trace's intuitive visual pipeline view where one can clearly see a request's path. Bottlenecks related to a group of requests can also be effectively troubleshooted using the pipeline view analysis for a range of requests.</p>
+                    
+                    <img src="./images/2.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 100%; height: 400px;" class="bg-img2">
                     <img src="./images/Asset 22@10x.png" alt="" style="border-radius: 15px; border-radius: 50px;">
-                    <img src="./images/2.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 350px; height: 400px;">
                 </div>
             </div>
 
             <div class="features-content flex-container">
-               <div class="flex-item-40" style="background-color: #3fa2f6;">
+               <div class="flex-item-40" style="background-color: #378fd1;">
                     <h2>End-to-end Task Management with Push &  E-Mail Notifications</h2>
                     <p>Never miss a follow-up with Stack|N|Trace CRM's push and email notifications for tasks and follow-up activities, whether it's sales visits or preparing for packing and shipping.</p>
+                   
+                    <img src="./images/4.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 100%; height: 400px;" class="bg-img3">
                     <img src="./images/Asset 14@10x.png" alt="">
-                    <img src="./images/4.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 350px; height: 400px;">
                 </div>
                 <div class="flex-item-60" style="background-color: #fff9d0;">
                     <h2>Take charge of your team's follow-ups using the subscribe service</h2>
                     <p>Want to monitor your team's follow-ups? Stack|N|Trace CRM, based on business rules, allows the sales head or a territory manager to subcribe to an associate member's follow-ups as needed to ensure that no follow-ups are missed during the day.</p>
+                    
+                    <img src="./images/1stblue.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 100%; height: 400px;" class="bg-img4">
                     <img src="./images/Asset 13@10x.png" alt="">
-                    <img src="./images/3.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 500px; height: 400px;">
                 </div>
             </div>
 
@@ -108,14 +140,16 @@
                     <h2>Reduce distractions & improve productivity with the help of our integrated chat tool.</h2>
                     <p>Email threads running into pages will be a thing of the past.
                          With Stack|N|Trace CRM chats are confined to the realm of a specific request, making it less cumbersome for the operations team to digest the messages and take lucid action. Share files annotate just like you would do on your social network.</p>
+                    
+                    <img src="./images/5.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 100%; height: 400px;" class="bg-img5">
                     <img src="./images/Asset 12@10x.png" alt="">
-                    <img src="./images/5.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 500px; height: 400px;">
                 </div>
                 <div class="flex-item-40" style="background-color: #ea8d65;">
-                    <h2>Optimum delivery of E Mail/SMS notifications with monitoring</h2>
+                    <h2>Optimum delivery of E-Mail/SMS notifications with monitoring</h2>
                     <p>Configurable from both the management's and user's end, the notification system features integration of email with email delivery service providers to ensure deliverability of emails along with deliverability reports.</p>
+                   
+                    <img src="./images/10.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 100%; height: 400px;" class="bg-img6">
                     <img src="./images/Asset 11@10x.png" alt="">
-                    <img src="./images/4.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 350px; height: 400px;">
                 </div>
             </div>
 
@@ -123,14 +157,16 @@
                 <div class="flex-item-40" style="background-color: #5356ff;">
                      <h2>Docs,on the fly</h2>
                      <p>Stack|N|Trace CRM creates all necessary shipping documents in one go from the order area without the need for copying and pasting between different files.</p>
+                     
+                     <img src="./images/8.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 100%; height: 400px;" class="bg-img7">
                      <img src="./images/Asset 10@10x.png" alt="">
-                     <img src="./images/8.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 350px; height: 400px;">
                  </div>
                  <div class="flex-item-60" style="background-color: #dff5ff;">
                      <h2>Improve the delivery promise with Sales Order fulfillment.</h2>
                      <p>Manage delivery deadlines better with an optional add-on that integrates finished goods inventory on the shop floor with the order book, providing real-time updates on the order status and keeping you and the customer informed of any changes.</p>
+                     
+                     <img src="./images/1stblue.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 100%; height: 400px;" class="bg-img8">
                      <img src="./images/Asset 9@10x.png" alt="">
-                     <img src="./images/7.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 500px; height: 400px;">
                  </div>
              </div>
 
@@ -141,14 +177,16 @@
                         CRM through a comprehensively engineered set of dashboards/ analytics.
                         Get the big picture for each set to activities performed inside the system and drill down to the basics whenever required.
                     </p>
+                   
+                    <img src="./images/9.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 100%; height: 400px;" class="bg-img9">
                     <img src="./images/Asset 8@10x.png" alt="">
-                    <img src="./images/9.png" alt="" style="position: absolute;left: 0; bottom: 0;width: 500px; height: 400px;">
                 </div>
                 <div class="flex-item-40" style="background-color: #677d6a;">
                     <h2>Stay in touch with the past with our data migration tools</h2>
                     <p>If past sales data has been maintained on an accounting system such as Tally or an ERP, they could brought in to Stack|N|Trace system for quicker and wider analysis using a table or a chart based approach.</p>
+                    
+                    <img src="./images/10.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 100%; height: 400px;" class="bg-img10">
                     <img src="./images/Asset 7@10x.png" alt="">
-                    <img src="./images/10.png" alt="" style="position: absolute;left: 0; bottom: 0; width: 350px; height: 400px;">
                 </div>
             </div>
 
@@ -177,11 +215,11 @@
                     </div>
                 </div>
                 <div class="right-content">
-                    <div class="grid-item">PRICE CALCULATOR MODULE</div>
-                    <div class="grid-item">INVENTORY MANAGEMENT MODULE</div>
+                    <div class="grid-item">PRICE CALCULATOR </div>
+                    <div class="grid-item">INVENTORY MANAGEMENT </div>
                     <div class="grid-item">PURCHASE MODULE</div>
-                    <div class="grid-item"> ASSET <br>
-                         MANAGEMENT TOOL</div>
+                    <div class="grid-item"> ASSET MANAGEMENT <br>
+                    </div>
                 </div>
             </div>
         </div>
@@ -247,10 +285,10 @@
                      <ul>
                      <li><i class="fa-solid fa-phone"style="color:#000;"></i><a href=""> 9884037476</a></li>
                      <li><i class="fa-solid fa-envelope " style="color:#000;"></i><a href=""> sales@sysmix.com</a></li>
-                     <div style="display: flex;flex-direction: row; margin-top: 6px;">
-                         <i class="fa-brands fa-facebook-f " style="margin: 5px 5px; cursor: pointer;"></i>
-                         <i class="fa-brands fa-instagram" style="margin: 5px 5px; cursor: pointer;"></i>
-                         <i class="fa-brands fa-twitter" style="margin: 5px 5px; cursor: pointer;"></i>
+                     <div style="display: flex;flex-direction: row; margin-top: 6px;" class="icons">
+                         
+                         
+                         
                      </div>
                      
                      </ul>
@@ -259,5 +297,6 @@
              </div>
          </div>
  <!-- end of footer-section -->
+ <script src="./index.js"></script>
 </body>
 </html>

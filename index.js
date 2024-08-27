@@ -85,3 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //  end of carousel-section
 
+const newmenu=document.getElementsByClassName("newmenu")[0]
+function showSubMenu(){
+  newmenu.classList.toggle("submenu-show")
+}
+console.log(newmenu);
+
+
+
+const responsiveMenu=document.getElementsByClassName("responsive-menu")[0]
+
+        function showMenu(){
+          const imagesection=document.getElementsByClassName("image-section")[0]
+            responsiveMenu.classList.toggle("showmenubar")
+            imagesection.classList.toggle("image-section-add")
+        }
+
+       
