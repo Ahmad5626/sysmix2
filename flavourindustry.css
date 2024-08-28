@@ -364,6 +364,21 @@
       position: relative;
       top: 60px;
    }
+   @media(max-width: 768px){
+    .image-section{
+        /* border: 3px solid red; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: url();
+          background-size: cover;
+          background-position: center;
+          max-width: 100%;
+          min-height: 40vh;
+          position: relative;
+          top: 60px;
+       }
+   }
    .image-section .content{
     position: absolute;
     bottom: 200px;
@@ -478,11 +493,11 @@
 @media (max-width: 576px) {
     .image-section {
         padding: 15px; /* More padding for smaller screens */
-        min-height: 70vh;
+        min-height: 40vh;
     }
 
     .image-section .content {
-        bottom: 100px;
+        bottom: -15px;
         max-width: 90%;
        
     }
@@ -505,7 +520,7 @@
 
 @media (max-width: 400px) {
     .image-section .content {
-        bottom: 250px;
+        bottom: 0px;
     }
 
     .image-section .content h1 {

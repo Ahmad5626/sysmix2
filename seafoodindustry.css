@@ -368,6 +368,21 @@
     position: relative;
     top: 60px;
    }
+   @media(max-width: 768px){
+    .image-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('');
+        background-size: cover;
+        background-position: center;
+        max-width: 100%;
+        min-height: 40vh;
+        display: none;
+        position: relative;
+        top: 60px;
+       } 
+   }
    .image-section img{
     width: 100%;
     object-fit: cover;
