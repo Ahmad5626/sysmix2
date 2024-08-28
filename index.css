@@ -1005,12 +1005,13 @@
 
     }
     .responsive-menu ul li{
-        padding: 10px 0px;
+        padding: 16px 0px;
     }
     .responsive-menu ul li a{
         text-decoration: none; 
         color: white; 
         font-family: "Outfit", sans-serif;
+        font-size: 21px;
 
     }
 
@@ -1030,7 +1031,7 @@
       top: 0px;
   }
   .newmenu{
-    height: 40px;
+    height: 53px;
     overflow: hidden;
   }
   .submenu-show{

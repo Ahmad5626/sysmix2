@@ -254,6 +254,10 @@ body{
         font-size: 1.875rem;
         font-weight: 500;
         line-height: 39px;
+        margin-block-start: 0.27em;
+    margin-block-end: 0.67em;
+    margin-inline-start: -4px;
+    margin-inline-end: -4px;
     }
     .heading .heading-content h4{
         font-family: "Outfit",sans-serif;
